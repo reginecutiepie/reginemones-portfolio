@@ -1,0 +1,422 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+img {
+	width:100%;
+}
+
+::root{
+--color-gray-light-1:#F5F5F5; /* whitesmoke */
+
+--color-gray-dark-1:#DDD;
+--color-gray-dark-2:#AAA;
+--color-gray-dark-3:#999;
+--color-gray-dark-4:#555;
+--color-gray-dark-5:#333;
+
+--color-green-1:#008000; /*green*/
+--color-green-2:#6B8E23; /*olivedrab*/
+
+--color-yellow:#FFD700; /*gold*/
+
+--color-red-1:#FF4500; /*orangered*/
+--color-red-2:#B22222; /*firebrick*/
+}
+
+body{
+	font-weight:300;
+	font-family:"Open Sans",sans-serif;
+	color:#333;
+	font-size:14px;
+}
+
+/* header ****************************/
+.header{
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:16px;
+	display:flex;
+	justify-content:space-between;
+}
+.header-logo {
+	width:60px;
+	margin:5px 0;
+}
+.org-name{
+	align-self:center;
+	margin-right:auto;
+	margin-left:10px;
+	font-size:18px;
+	font-weight:400;
+	color:green;
+}
+.nav{
+	display:flex;
+	align-items:stretch;
+}
+.navbar{
+	display:flex;
+}
+.navbar-item{
+	list-style:none;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	padding:0 20px;
+	cursor:pointer;
+}
+
+.navbar-item img{
+	width:20px;
+	height:20px;
+	filter:opacity(.5);
+	margin-top:14px;
+}
+
+.navbar-item:hover, .navbar-item.activepage{
+	background-color:gold;
+}
+
+/* main *******************************/
+main{
+	max-width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+}
+
+.green{
+	background-color:#6B8E23;
+	color:#FFF;
+	padding: 20px;
+	width: 100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size: 15px;
+	font-weight: 30px;
+}
+.recipe{
+	padding-left: 175px;
+}
+.green-chevron{
+	display:flex;
+	align-items:center;
+	padding-right: 175px;
+}
+.chevron{
+	height: 20px;
+	width: 20px;
+	filter: invert();
+}
+
+.first-part{
+	background-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.profile{
+	background-color: #dfdfdf;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 400px;
+	flex-basis: 30%;
+}
+.food-name{
+	padding: 10px;
+	font-weight: bold;
+}
+
+.food{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 70%;
+}
+.img-food{
+	height: 400px;
+}
+.person{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.user {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3px solid rgb(240, 234, 234);
+}
+.prep-time{
+	display: flex;
+	flex-direction: row;
+	height: 60px;
+	width: 270px;
+}
+.prep-time li{
+	font-size: 13px;
+}
+.cooking-time{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 140px;
+	padding: 10px;
+	list-style: none;
+}
+
+.time{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 130px;
+	padding: 10px;
+	list-style: none;
+}
+
+.introduction{
+	display: flex;
+	align-items: flex-start;
+	height: 50vh;
+	padding: 20px 20px 0 20px;
+}
+.second-part{
+	display: flex;
+	flex-direction: row;
+	border-style: dotted;
+	border-color: #f1f1f1;
+	padding: 0px 0px 75px;
+}
+.ingredients{
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px 20px 20px;
+	flex-basis: 30%;
+}
+.ingredients li{
+	font-size: 12px;
+}
+.ing-2{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.instructions{
+	display: flex;
+	flex-direction: column;
+	padding: 40px 20px 20px 20px;
+	flex-basis: 70%;
+}
+
+/* ratings ****************************/
+.ratings{
+	background-color:firebrick;
+	color:#FFF;
+	padding: 0 0 0 20px;
+	
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.ratings-location{
+	display:flex;
+	align-items:center;
+}
+.ratings-tags{
+	display:flex;
+	align-items:center;
+}
+.ratings-icon{
+	width:18px;
+	height:18px;
+	filter:invert(1);
+}
+.ratings ul {
+	display:flex;
+}
+.ratings li{
+	list-style:none;
+}
+.ratings li:not(:first-child)::before{
+	content:" | ";
+}
+.ratings-stars{
+	display:flex;
+	align-items:center;
+}
+.ratings-votes{
+	background-color:orangered;
+	padding:10px;
+	font-size:12px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.ratings-item .ratings-icon:first-of-type{
+	margin-right:5px;
+}
+
+.third-part{
+	display: block;
+	padding: 100px 0;
+	background-color: whitesmoke;
+}
+.recom{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card{
+	padding: 0 10px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.card1{
+	flex-grow: 1;
+	background-color: white;
+	height: 420px ;
+	margin: 0 10px;
+}
+.beef-wrap-image{
+	width: 100%;
+	height: 170px;
+}
+.bottom{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.beef-name{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+.ratings-food{
+	width:18px;
+	height:18px;
+}
+.rates{
+	width: 70px;
+	height: 50px;
+	background-color: #6B8E23;
+	border-radius: 5px;
+}
+.ratings-item .ratings-food:first-of-type{
+	margin-right:5px;
+}
+.desc{
+	margin: 20px 20px;
+}
+.reviews{
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.user2{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.userJ{
+	font-weight: normal;
+	margin:0 auto 0 5px;
+}
+.rates{
+	background-color:#6B8E23;
+	font-size:12px;
+	color: white;
+	width: 75px;
+	border-radius: 5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.center{
+	text-align: center;
+}
+.rates-score{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.gray{
+	background-color: #555;
+}
+.gray-container{
+	padding: 20px 0;
+	margin: 0 auto;
+	width: 960px;
+}
+.gray-logo{
+	color:whitesmoke;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.orange-logo{
+	width: 100px;
+}
+.icon-details{
+	margin-right: 10px;
+	width: 15px;
+	filter: invert(2) opacity(.4);
+}
+.pads{
+	margin-right: 30%;
+}
+.list-type{
+	list-style: none;
+}
+.media{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 120px;
+	align-self: flex-end;
+}
+.media-icons{
+	filter: invert(2) opacity(.4);
+	width: 30px;
+}
+.copyright{
+	width: 100%;
+	height: 20px;
+	background-color: #333;
+}
+.container{
+	margin: 0 auto;
+	width: auto;
+	height: 20px;
+	padding: 5px 0;
+	color: #AAA;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rocket{
+	filter: invert(2) opacity(.5);
+	margin-left: auto;
+	margin-right: 5px;
+	width: 15px;
+}
+.line1{
+	padding-left: 195px;
+}
+.line2{
+	padding-right: 195px;
+}
